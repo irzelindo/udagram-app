@@ -44,7 +44,7 @@ import { Request, Response } from 'express';
     // Send the resulting file in the response
     res.status(200).sendFile(filteredpath);
     // Delete any files on the server on finish of the response
-    // deleteLocalFiles([filteredpath]);
+    deleteLocalFiles([filteredpath]);
   });
 
   //! END @TODO1
